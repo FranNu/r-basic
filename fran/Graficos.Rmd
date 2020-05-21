@@ -1,0 +1,29 @@
+---
+title: "Graficos.Rmd"
+author: "Fran"
+date: "21/5/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Gráficos con la función `plot`
+```{r primer_plot, fig.cap="Primer Grafico", fig.align='center'}
+alumnos = c(1:10)
+notas = c(2,5,7,9,8,3,5,6,6,7)
+plot(alumnos,notas)
+```
+
+```{r}
+plot (2^(1:6))
+```
+
+Representar una funcion:
+
+```{r}
+f <- function(x){sqrt(x)}
+plot(f)
+```
+
